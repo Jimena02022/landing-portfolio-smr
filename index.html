@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Proyecto_final_Jimena_Isidoro_Vega.css" />
+  <title>Las serpientes más venenosas del mundo</title>
+</head>
+
+<body>
+  <header id="inicio">
+    <div class="header-content">
+      <img src="./Imagenes/Serpiente_Amarilla.png" alt="Serpiente" class="logo" />
+      <h1>Las serpientes más venenosas del mundo</h1>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+    </div>
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#tipos">Tipos de serpientes</a></li>
+        <li><a href="#curiosidades">Curiosidades</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    toggle.addEventListener("click", () => {
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!menu.contains(event.target) && !toggle.contains(event.target)) {
+        menu.style.display = "none";
+      }
+    });
+  </script>
+  <section class="hero">
+    <h2 class="hero-sub">Explora las especies más letales del planeta</h2>
+    <a href="#tipos" class="btn-hero">Ver serpientes</a>
+  </section>
+  <main class="menucentro">
+    <img src="./Imagenes/serpienteportada2.jpg" alt="serpiente portada" class="portada" />
+    <p class="intro"><em>“Cada especie es una solución a un problema que la vida resolvió hace millones de años.” David Attenborough</em></p>
+    <section class="ficha" id="tipos">
+      <div class="texto">
+        <h2>1. Oxyuranus microlepidotus (Taipán del interior)</h2>
+        <p>
+          Vive en el centro árido de Australia. Puede medir hasta <strong>2,5 m</strong> y su veneno es el
+          <strong>más letal del mundo</strong>. Aun así, es una especie muy tímida que evita el contacto con humanos.
+          Caza pequeños mamíferos con una mordida rápida y precisa.
+        </p>
+      </div>
+      <img src="./Imagenes/taipan.jpg" alt="Taipán del interior" class="imagen" />
+    </section>
+    <section class="ficha ficha-izq">
+      <img src="./Imagenes/krait.jpg" alt="Krait común" class="imagen" />
+      <div class="texto">
+        <h2>2. Bungarus caeruleus (Krait común)</h2>
+        <p>
+          Originaria del sur de Asia, se encuentra en <strong>India, Pakistán y Sri Lanka</strong>.
+          Alcanza cerca de <strong>1,5 metros</strong> y presenta un cuerpo negro brillante con
+          <strong>bandas blancas</strong>. Su veneno <em>neurotóxico</em> puede causar parálisis respiratoria,
+          aunque es una especie <strong>nocturna y poco agresiva</strong>. Durante el día suele esconderse bajo
+          piedras o en madrigueras.
+        </p>
+      </div>
+    </section>
+    <section class="ficha">
+      <div class="texto">
+        <h2>3. Naja philippinensis (Cobra filipina)</h2>
+        <p>
+          Habita en las <strong>islas del norte de Filipinas</strong>, sobre todo en zonas húmedas y agrícolas.  
+          Puede medir cerca de <strong>1,6 metros</strong> y es conocida por su capacidad para
+          <strong>escupir veneno</strong> a varios metros de distancia.  
+          Su toxina es <em>neurotóxica</em> y puede causar parálisis respiratoria.  
+          Aun así, suele evitar el contacto con humanos y solo ataca si se siente acorralada.
+        </p>
+      </div>
+      <img src="./Imagenes/cobrafilipina.jpg" alt="cobrafilipina" class="imagen" />
+    </section>
+    <section class="ficha ficha-izq">
+      <img src="./Imagenes/cobrareal.jpg" alt="Cobra real" class="imagen" />
+      <div class="texto">
+        <h2>4. Ophiophagus hannah (Cobra real)</h2>
+        <p>
+          La <strong>cobra real</strong> es la serpiente venenosa más larga del mundo, pudiendo superar los <strong>5 metros</strong>.  
+          Habita en bosques tropicales del <strong>sureste asiático</strong> y se alimenta principalmente de otras serpientes.  
+          Su veneno <em>neurotóxico</em> puede derribar a un elefante pequeño, aunque rara vez ataca sin provocación.  
+          Es una especie <strong>respetada y temida</strong>, símbolo de poder en muchas culturas asiáticas.
+        </p>
+      </div>
+    </section>
+    <section class="ficha">
+      <div class="texto">
+        <h2>5. Daboia russelii (Víbora de Russell)</h2>
+        <p>
+          Muy común en <strong>Asia meridional</strong>, desde India hasta el sudeste asiático.  
+          Mide entre <strong>1 y 1,5 metros</strong> y tiene un cuerpo robusto con un patrón de manchas marrones circulares.  
+          Su veneno es <em>hemotóxico</em> y puede causar fallos renales y hemorragias internas.  
+          Es responsable de numerosos accidentes, ya que suele habitar zonas agrícolas y no teme acercarse a los humanos.
+        </p>
+      </div>
+      <img src="./Imagenes/viboraruseli.jpg" alt="Víbora de Russell" class="imagen" />
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Las serpientes más venenosas del mundo</p>
+      <nav class="footer-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#tipos">Tipos</a>
+        <a href="#curiosidades">Curiosidades</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="cookies" id="cookies">
+    <p>Este sitio utiliza cookies para mejorar tu experiencia.</p>
+    <div class="cookies-btns">
+      <button id="aceptar">Aceptar</button>
+      <button id="configurar">Configurar</button>
+    </div>
+  </div>
+
+  <script>
+    const cookieBox = document.getElementById("cookies");
+    const aceptarBtn = document.getElementById("aceptar");
+
+    aceptarBtn.addEventListener("click", () => {
+      cookieBox.style.display = "none";
+    });
+  </script>
+
+</body>
+</html>
