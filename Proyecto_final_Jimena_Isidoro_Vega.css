@@ -30,7 +30,6 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
 }
 
-/* MENÚ DESPLEGABLE */
 .menu-toggle {
   font-size: 2em;
   cursor: pointer;
@@ -171,7 +170,6 @@ body {
   transform: scale(1.03);
 }
 
-
 .hero {
   background-color: rgba(60, 30, 10, 0.9);
   width: 80%;
@@ -203,7 +201,6 @@ body {
 .btn-hero:hover {
   background-color: #ffe870;
 }
-
 
 footer {
   background-color: #2E7D32;
@@ -257,6 +254,7 @@ footer {
 .cookies-btns button:hover {
   background-color: #ffe870;
 }
+
 @media (max-width: 768px) {
 
   header {
@@ -288,8 +286,10 @@ footer {
   }
 
   .menucentro {
-    width: 95%;
+    width: 100%;
+    margin: 0;
     padding: 20px;
+    border-radius: 0;
   }
 
   .intro {
@@ -361,3 +361,4 @@ footer {
     width: 100%;
   }
 }
+
